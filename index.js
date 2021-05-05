@@ -1,7 +1,7 @@
-const portStartingAmount = 465; //Enter your portfolio amount
+const portStartingAmount = 500; //Enter your portfolio amount
 const DailyPNLGoal = 0.05; //Enter your PNL percentage goal
 const portTradePercentage = 0.15; //Enter your port percentage for each trade
-const tradePercentage = 0.15; //Enter the return percentage of your trades
+const tradePercentage = 0.10; //Enter the return percentage of your trades
 
 console.log(`Starting port = ${portStartingAmount}`);
 console.log(` `);
@@ -47,7 +47,7 @@ let trades = (a) => {
       }% to achieve your daily PNL of ${DailyPNLGoal * 100}%`
     );
     console.log(" ");
-    console.log(`PNL actual = ${pnlCalc(trading, portStartingAmount)}`);
+    console.log(`PNL actual = $${pnlCalc(trading, portStartingAmount)}`);
     console.log(" ");
     return `PNL percentage = ${
       (pnlCalc(trading, portStartingAmount) / portStartingAmount) * 100
