@@ -1,7 +1,7 @@
-const portStartingAmount = 500; //Enter your portfolio amount
-const dailyPNLGoal = 0.05; //Enter your PNL percentage goal
-const portTradePercentage = 0.40; //Enter your port percentage for each trade
-const tradePercentage = 0.20; //Enter the return percentage of your trades
+const portStartingAmount = 540; //Enter your portfolio amount
+const dailyPNLGoal = 0.20; //Enter your PNL percentage goal
+const portTradePercentage = 0.25; //Enter your port percentage for each trade
+const tradePercentage = 0.15; //Enter the return percentage of your trades
 // const portStartingAmount = document.getElementById('portfolio--input').value; //Enter your portfolio amount
 // const dailyPNLGoal = document.getElementById('dailyPNLGoal--input').value; //Enter your PNL percentage goal
 // const portTradePercentage = document.getElementById('portPercentage--input').value; //Enter your port percentage for each trade
