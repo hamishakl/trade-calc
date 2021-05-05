@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div value="sdjnasd" name="yes" onmouseover="test(this.value)" style="height: 100px; width: 100px; background-color: aquamarine;"></div>
-    <button value="sdjnasd" onmouseover="test(this.value)" style="height: 100px; width: 100px; background-color: aquamarine;"></button>
-    <script src="test.js">
-        
-    </script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <h1 id="title">test</h1>
+      <form
+        action=""
+        onsubmit="trades(
+            document.getElementById('a').value,
+            document.getElementById('b').value,
+            document.getElementById('c').value,
+            document.getElementById('d').value
+        )"
+        id="formWrapper"
+      >
+        <input type="number" id="portfolio--input" name="portfolio"/>
+        <label for="portfolio">Portfolio amount</label>
+        <input type="number" id="dailyPNLGoal--input" name="dailyPNL"/>
+        <label for="dailyPNL">daily pnl goal</label>
+        <input type="range" id="portPercentage--input" onchange="val(this.value)" name="portPercentage"/>
+        <label for="portPercentage">port percentage for each trade</label>
+        <input type="number" id="tradePercentage--input" name="returnPercentage"/>
+        <label for="returnPercentage">return on each trade</label>
+        <button type="submit"></button>
+      </form>
+      <p id="a"></p>
+      <p id="b"></p>
+      <p id="c" ></p>
+      <p id="d"></p>
+    </section>
+    <script src="index.js"></script>
+  </body>
 </html>
