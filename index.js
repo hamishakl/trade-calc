@@ -1,11 +1,11 @@
-// const portStartingAmount = 500; //Enter your portfolio amount
-// const DailyPNLGoal = 0.05; //Enter your PNL percentage goal
-// const portTradePercentage = 0.40; //Enter your port percentage for each trade
-// const tradePercentage = 0.20; //Enter the return percentage of your trades
-const portStartingAmount = document.getElementById('portfolio--input').value; //Enter your portfolio amount
-const dailyPNLGoal = document.getElementById('dailyPNLGoal--input').value; //Enter your PNL percentage goal
-const portTradePercentage = document.getElementById('portPercentage--input').value; //Enter your port percentage for each trade
-const tradePercentage = document.getElementById('tradePercentage--input').value; //Enter the return percentage of your trades
+const portStartingAmount = 500; //Enter your portfolio amount
+const dailyPNLGoal = 0.05; //Enter your PNL percentage goal
+const portTradePercentage = 0.40; //Enter your port percentage for each trade
+const tradePercentage = 0.20; //Enter the return percentage of your trades
+// const portStartingAmount = document.getElementById('portfolio--input').value; //Enter your portfolio amount
+// const dailyPNLGoal = document.getElementById('dailyPNLGoal--input').value; //Enter your PNL percentage goal
+// const portTradePercentage = document.getElementById('portPercentage--input').value; //Enter your port percentage for each trade
+// const tradePercentage = document.getElementById('tradePercentage--input').value; //Enter the return percentage of your trades
 
 console.log(portStartingAmount)
 console.log(dailyPNLGoal);
@@ -17,12 +17,12 @@ let val = (a) => {
   console.log(`Port percentage for each trade = ${a}%`)
 }
 
-var form = document.getElementById("formWrapper");
-function handleForm(event) { event.preventDefault(); } 
-form.addEventListener('submit', handleForm);
+// var form = document.getElementById("formWrapper");
+// function handleForm(event) { event.preventDefault(); } 
+// form.addEventListener('submit', handleForm);
 
-document.getElementById('a').innerHTML = 
-`Starting port = ${portStartingAmount}`
+// document.getElementById('a').innerHTML = 
+// `Starting port = ${portStartingAmount}`
 
 let arr = [];
 
